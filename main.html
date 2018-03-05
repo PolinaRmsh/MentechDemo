@@ -8,47 +8,79 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans|Ubuntu" rel="stylesheet">
         <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
     </head>
     <body>
         <header>
-            <div class="headerContents">
-                <a class="headerLogo" href="main.html">
+            <!--<div class="headerContents">-->
+                <!--<a class="headerLogo" href="main.html">-->
+                    <!--<img class="headerLogo img" src="Mentech_Logo.jpg" alt="Company Logo">-->
+                <!--</a>-->
+                <!--<div id="headerLinks" class="headerRight row">-->
+                    <!--<a class="" href="projects.html">Our Projects</a>-->
+                    <!--<a class="" href="about.html">About Us</a>-->
+                    <!--<a class="" href="contact.html">Contact Us</a>-->
+                <!--</div>-->
+            <!--</div>-->
+            <nav class="navbar navbar-expand-lg navbar-light bg-white">
+                <a class="navbar-brand headerLogo" href="main.html">
                     <img class="headerLogo img" src="Mentech_Logo.jpg" alt="Company Logo">
                 </a>
-                <div id="headerLinks" class="headerRight">
-                    <a href="projects.html">Our Projects</a>
-                    <a href="about.html">About Us</a>
-                    <a href="contact.html">Contact Us</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+                        aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarText">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item mr-4">
+                            <a class="nav-link link-size" href="projects.html">Our Projects<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item mr-4">
+                            <a class="nav-link link-size" href="about.html">About Us</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link link-size" href="contact.html">Contact Us</a>
+                        </li>
+                    </ul>
                 </div>
-            </div>
+            </nav>
         </header>
-        <div class="bodyWrap">
+        <div class="bodyWrap ">
             <div class="mainPageText">
                     We turn creative ideas into value-adding tech innovations for the mental healthcare.
             </div>
-            <div class="twoProjects">
-                <div class="projectBox left">
-                    <a href="projects.html">Project ROSA</a>
-                    <div>
+            <div class="row justify-content-around">
+                <div class="jumbotron col-sm-5 rounded-2">
+                    <a href="projects.html"><h1>Project ROSA</h1></a>
+                    <div class="text-justify">
                         The project ROSA aims to&nbsp;develop and implement an&nbsp;objective stress warning system,
                         based on&nbsp;the measurement of&nbsp;physiological parameters with wearable sensors,
                         to&nbsp;support these signaling plans and thereby improving the quality of&nbsp;care and
                         quality of&nbsp;life.
                     </div>
                 </div>
-                <div class="projectBox right">
-                    <a href="projects.html">HEAL</a>
-                    <div>
+                <div class="jumbotron col-sm-5 rounded-2">
+                    <a href="projects.html"><h1>HEAL</h1></a>
+                    <div class="text-justify">
                         Co-creation network and application lab to&nbsp;validate tech solutions for mental healthcare.
                     </div>
                 </div>
             </div>
-            <div class="mission">
-                <div class="missionImage a"></div>
-                <div class="missionImage b"></div>
-                <div class="missionImage c"></div>
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner sizing">
+                    <div class="carousel-item active">
+                        <img class="d-block w-100" src="img/dementia_patient.jpg" alt="Dementia Patient">
+                    </div>
+                    <div class="carousel-item" >
+                        <img class="d-block w-100" src="img/downs_syndrome.jpg" alt="A child with Downs syndrome">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="img/doctor_image.jpg" alt="A doctor">
+                    </div>
+                </div>
             </div>
             </div>
         </div>
@@ -58,15 +90,9 @@
             </div>
         </footer>
 
-
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
         <script src="js/main.js"></script>
-
-        <!--&lt;!&ndash; Google Analytics: change UA-XXXXX-Y to be your site's ID. &ndash;&gt;-->
-        <!--<script>-->
-            <!--window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;-->
-            <!--ga('create','UA-XXXXX-Y','auto');ga('send','pageview')-->
-        <!--</script>-->
-        <!--<script src="https://www.google-analytics.com/analytics.js" async defer></script>-->
-
     </body>
 </html>

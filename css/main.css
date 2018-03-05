@@ -4,10 +4,15 @@ html {
     color: #222;
     font-size: 1em;
     line-height: 1.4;
-    font-family: 'Open Sans', sans-serif;
+
 }
 * {
     box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+.sizing img{
+    height: 500pt;
+    object-fit: cover;
 }
 /* Top header */
 header{
@@ -36,45 +41,53 @@ header{
     margin-top: 14pt;
 }
 .headerRight a{
-    color: white;
+    color: white !important;
     background-color: rgba(112,48,160, 0.86);
     text-align: center;
     padding: 14px 16px;
     margin-left: 3pt;
     margin-right: 3pt;
-    text-decoration: none;
+    text-decoration: none !important;
     font-size: 14pt;
     border-radius: 25px;
     font-family: 'Ubuntu', sans-serif;
 }
 .headerRight a:hover{
-    background-color: rgba(112,48,160, 21);;
+    background-color: rgba(112,48,160, 21);
+}
+.link-size{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 16pt;
+}
+nav-margin{
+    margin: 10pt 0;
 }
 
 /* Main body */
 .bodyWrap{
     margin-left: 5%;
     margin-right: 5%;
-    margin-top: 30pt;
+    margin-top: 15pt;
     position: relative;
 
 }
 .mainPageText{
     font-size: 20pt;
     color: dimgray;
-    text-align: center;
+    text-align: center !important;
     position: relative;
+    margin-bottom: 30pt;
 }
 /*Two columns with projects*/
 .twoProjects{
-    margin-top: 30pt;
+    margin-top: 30pt !important;
     width: 100%;
 }
 .projectBox {
     float: left;
     width: 49.4%;
     height: 200pt;
-    padding: 3% 3%;
+    padding: 3% 3% !important;
     background-color: rgba(2,32,104,0.86);
     border-radius: 25px;
     border: none;
@@ -86,16 +99,46 @@ header{
     font-size: 18pt;
     text-decoration: underline;
     color: white;
-    padding: 5pt;
-    -webkit-transition: font-size 1s;
-    transition: font-size 1s;
+    padding: 5pt !important;
+
+    /*-webkit-transition: font-size 1s;*/
+    /*transition: font-size 1s;*/
     font-family: 'Ubuntu', sans-serif;
 }
 .projectBox a:hover{
-    font-size: 20pt;
+    animation-name: linkIncrease;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    /*font-size: 20pt;*/
+    color: white;
 }
+@keyframes linkIncrease {
+    from{
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.5);
+    }
+}
+
+.projectText {
+    text-align: justify !important;
+}
+
+.rounded-2{border-radius:1rem!important}
+
+.mx-6 {
+    margin-right:6rem!important;
+    margin-left: 6rem!important;
+}
+
+.btn-purple {
+    color: white !important;
+    background-color: rgba(112, 48, 160, 0.8);
+}
+
 .projectBox div{
-    margin-top: 15pt;
+    margin-top: 15pt !important;
     text-align: justify;
     color: white;
     font-size: 12pt;
