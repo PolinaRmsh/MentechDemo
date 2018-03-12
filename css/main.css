@@ -55,6 +55,7 @@ nav {
     justify-content: center;
     overflow: hidden;
     position: relative;
+    padding-bottom: 1rem;
 }
 .avatar-img img{
     border-radius: 50%;
@@ -88,7 +89,9 @@ nav {
     position: relative;
     text-align: center;
 }
-.heightwidth{
+.heightwidth {
+    max-height: 15rem !important;
+    min-height: 15rem !important;
     height: 100% !important;
     width: 100% !important;
     display: inline-block;
@@ -97,8 +100,8 @@ nav {
     -webkit-transform: rotatey(-180deg);
     transform: rotatey(-180deg);
 }
-.flip .card {
 
+.flip .card {
     -webkit-transform-style: preserve-3d;
     -webkit-transition: 0.5s;
     transform-style: preserve-3d;
@@ -121,9 +124,9 @@ nav {
     z-index: 1;
 }
 .flip .card .back {
-    padding-top: 2%;
-    -webkit-transform: rotatey(-180deg);
-    transform: rotatey(-180deg);
+    /*padding-top: 2%;*/
+    -webkit-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
     background-color: white;
     height: 100%;
 }
@@ -189,6 +192,11 @@ nav {
     background-color: #7030a0;
     color: #D1C4E9;
 }
+
+.bg-pattern {
+    background-image: url('../img/circles.png')
+}
+
 .marg{
     margin-top: 1rem;
     margin-bottom: 1rem;
@@ -196,14 +204,14 @@ nav {
 }
 
 .rounded-image{
-    width: 350px!important;
-    height: 350px!important;
+    width: 15rem!important;
+    height: 15rem!important;
 
 }
 .rounded-image img{
     border-radius: 50%;
-    width:350px;
-    height:350px;
+    width: 15rem;
+    height: 15rem;
 }
 .hover-whitening:hover{
     color: white;
@@ -693,4 +701,10 @@ textarea {
     h3 {
         page-break-after: avoid;
     }
+}
+
+.img-card {
+    padding: 15px;
+    max-height: 70%;
+    max-width: 70%;
 }
