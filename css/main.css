@@ -214,7 +214,21 @@ nav {
 .logo-btn-color.ln:hover {
     color: #0077b5;
 }
-
+.logo-btn-color.git{
+    color: #caccce;
+}
+.logo-btn-color.git:hover{
+    color: #4078c0;
+}
+.logo-btn-color.tw{
+    color: #caccce;
+}
+.logo-btn-color.tw:hover{
+    color: #1da1f2;
+}
+.links{
+    justify-content: flex-end !important;
+}
 .user i:hover {
     color: #dd5143;
 }
@@ -253,9 +267,10 @@ nav {
 .hover-whitening:hover {
     color: white;
 }
-.copyright{
-    display: block;
-    width: 100%;
+.footer-style{
+    background-color: #2e194e;
+    padding: 0.5rem;
+    color: #D1C4E9;
 }
 
 /* about us section */
