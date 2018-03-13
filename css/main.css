@@ -67,7 +67,7 @@ nav {
     position: relative;
     height: 15rem;
     width: 15rem;
-
+    margin: 0 auto;
 }
 
 .avatar-img img {
@@ -239,6 +239,8 @@ nav {
 }
 
 .rounded-image {
+    margin: 0 auto;
+    padding: 0 !important;
     width: 15rem !important;
     height: 15rem !important;
 
