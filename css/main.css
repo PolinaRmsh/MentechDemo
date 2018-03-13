@@ -59,21 +59,21 @@ nav {
 }
 
 /* the team */
-.full-size {
-
-}
 
 .avatar-img {
     border-radius: 100%;
     justify-content: center;
     overflow: hidden;
     position: relative;
-    /*padding-bottom: 1rem;*/
+    height: 15rem;
+    width: 15rem;
+
 }
 
 .avatar-img img {
     border-radius: 50%;
     height: 100%;
+    object-fit: cover;
 }
 
 .overlay {
@@ -252,6 +252,10 @@ nav {
 
 .hover-whitening:hover {
     color: white;
+}
+.copyright{
+    display: block;
+    width: 100%;
 }
 
 /* about us section */
