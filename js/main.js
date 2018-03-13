@@ -38,8 +38,8 @@ function menuScroll(elID)
 }
 
 // partners rotation
-$('.flip').click(function(){
-    $(this).find('.card').toggleClass('flipped');
+$('.click-btn').click(function(){
+    $(this).parents('.flip').find('.card').toggleClass('flipped');
 
 });
 

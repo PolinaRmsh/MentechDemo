@@ -182,6 +182,9 @@ nav {
     width: auto !important;
     display: inline-block;
 }
+.click-btn{
+    color: white!important;
+}
 
 /* ------------------------ */
 
