@@ -171,6 +171,8 @@ nav {
 
 .click-btn {
     color: white !important;
+    overflow: hidden;
+    max-width: 100%;
 }
 
 /* ------------------------ */
