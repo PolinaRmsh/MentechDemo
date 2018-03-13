@@ -1,15 +1,13 @@
-# humanstxt.org/
-# The humans responsible & technology colophon
+/* TEAM */
 
-# TEAM
+Developer: Polina Rymshina
+Location: Eindhoven, The Netherlands.
 
-    <name> -- <role> -- <twitter>
+/* THANKS */
 
-# THANKS
+    Bart Monhemius
 
-    <name>
+/* TECHNOLOGY COLOPHON */
 
-# TECHNOLOGY COLOPHON
-
-    CSS3, HTML5
-    Apache Server Configs, jQuery, Modernizr, Normalize.css
+CSS3, HTML5
+Bootstrap, jQuery, Modernizr, Normalize.css, Webstorm
