@@ -55,7 +55,7 @@ nav {
     justify-content: center;
     overflow: hidden;
     position: relative;
-    padding-bottom: 1rem;
+    /*padding-bottom: 1rem;*/
 }
 .avatar-img img{
     border-radius: 50%;
@@ -81,6 +81,9 @@ nav {
 
 .overlay:hover {
     opacity: 1;
+}
+.avatar-text{
+    padding-top: 1rem;
 }
 /* partners */
 .flip {
